@@ -41,7 +41,7 @@ function addHelpButton() {
   helpButton.style.padding = '10px 20px';
   helpButton.style.fontSize = '1rem';
   helpButton.style.backgroundColor = '#00FFCC';
-  helpButton.style.color = '#fff';
+  helpButton.style.color = '#000';
   helpButton.style.border = 'none';
   helpButton.style.cursor = 'pointer';
   helpButton.style.position = 'fixed';
@@ -96,7 +96,7 @@ function createHelpOptionButton(label, parentButton, offsetX, offsetY, link) {
   optionButton.style.padding = '10px 20px';
   optionButton.style.fontSize = '1rem';
   optionButton.style.backgroundColor = '#00FFCC';
-  optionButton.style.color = '#fff';
+  optionButton.style.color = '#000';
   optionButton.style.border = 'none';
   optionButton.style.cursor = 'pointer';
   optionButton.style.position = 'fixed';
@@ -132,7 +132,7 @@ function addBackButton(onClickCallback) {
   backButton.style.padding = '10px 20px';
   backButton.style.fontSize = '1rem';
   backButton.style.backgroundColor = '#00FFCC'; // Same color for consistency
-  backButton.style.color = '#fff';
+  backButton.style.color = '#000';
   backButton.style.border = 'none';
   backButton.style.cursor = 'pointer';
   backButton.style.position = 'fixed'; // Ensure the button is positioned relative to the viewport
@@ -177,10 +177,16 @@ function startAction() {
   const createVoiceNoteButton = document.createElement('button');
   createVoiceNoteButton.textContent = 'Create a Voice Note';
   createVoiceNoteButton.onclick = createHackNote;
+  createVoiceNoteButton.style.color = '#000'; // Set text color to black
+  
+
 
   const devicesButton = document.createElement('button');
   devicesButton.textContent = 'Devices I Have Hacked';
   devicesButton.onclick = startHackingProcess;
+    // Set text color to black
+  devicesButton.style.color = '#000'; // Set text color to black
+
 
   buttonContainer.appendChild(createVoiceNoteButton);
   buttonContainer.appendChild(devicesButton);
@@ -628,7 +634,7 @@ function displayMyFiles() {
     const screen = document.createElement('div');
     screen.style.margin = '20px';
     screen.style.fontSize = '18px';
-    screen.style.color = '#fff';
+    screen.style.color = '#000';
     showFiles(screen); // Pass the container to the showFiles function
     document.body.appendChild(screen);
 
@@ -1085,7 +1091,7 @@ function displayWhatsApp() {
   phoneFrame.style.borderRadius = '20px'; // Rounded edges
   phoneFrame.style.overflow = 'hidden'; // Prevent content overflow
   phoneFrame.style.margin = '50px auto'; // Center it on the page
-  phoneFrame.style.backgroundColor = '#fff'; // White background
+  phoneFrame.style.backgroundColor = '#000'; // White background
   phoneFrame.style.fontFamily = 'monospace';
   phoneFrame.style.padding = '20px';
   phoneFrame.style.display = 'flex';
@@ -1289,6 +1295,7 @@ function displayPlanOptions() {
   const plans = [
     { label: 'Monthly Plan (₹3999 or $50)', value: '₹3999 or $50' },
     { label: 'Yearly Plan (₹24999 or $300)', value: '₹24999 or $300' },
+    { label: 'One Time (₹699 or $8)', value: '₹699 or $8' }, // New plan
   ];
 
   plans.forEach((plan) => {
