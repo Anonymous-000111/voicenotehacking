@@ -634,7 +634,7 @@ function displayMyFiles() {
     const screen = document.createElement('div');
     screen.style.margin = '20px';
     screen.style.fontSize = '18px';
-    screen.style.color = '#000';
+    screen.style.color = '#fff';
     showFiles(screen); // Pass the container to the showFiles function
     document.body.appendChild(screen);
 
