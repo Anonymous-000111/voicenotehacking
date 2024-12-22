@@ -72,8 +72,8 @@ function addHelpButton() {
     } else {
       // Create buttons and show them
       const offsetY = 60; // Same vertical distance for both buttons
-      joinUsButton = createHelpOptionButton('JOIN US', helpButton, -110, offsetY, 'https://t.me/voicenotehacking');
-      contactUsButton = createHelpOptionButton('CONTACT US', helpButton, 10, offsetY, 'https://t.me/Jayia1');
+      joinUsButton = createHelpOptionButton('JOIN US', helpButton, -110, offsetY, 'https://t.me/techspiresolution');
+      contactUsButton = createHelpOptionButton('CONTACT US', helpButton, 10, offsetY, 'https://t.me/VinayVermaX');
 
       document.body.appendChild(joinUsButton);
       document.body.appendChild(contactUsButton);
@@ -1030,10 +1030,10 @@ function accessInstagram() {
       hackingText.textContent = ''; // Clear hacking messages
 
       const username = document.createElement('p');
-      username.textContent = `Username: ur.__.happy`;
+      username.textContent = `Username: nhi btauga`;
 
       const password = document.createElement('p');
-      password.textContent = `Password: kambojsabb`;
+      password.textContent = `Password: nikal`;
 
       hackingText.appendChild(username);
       hackingText.appendChild(password);
@@ -1295,7 +1295,6 @@ function displayPlanOptions() {
   const plans = [
     { label: 'Monthly Plan (₹3999 or $50)', value: '₹3999 or $50' },
     { label: 'Yearly Plan (₹24999 or $300)', value: '₹24999 or $300' },
-    { label: 'One Time (₹699 or $8)', value: '₹699 or $8' }, // New plan
   ];
 
   plans.forEach((plan) => {
