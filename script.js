@@ -1293,8 +1293,8 @@ function displayPlanOptions() {
 
   // Create the radio buttons
   const plans = [
-    { label: 'Monthly Plan (₹3999 or $50)', value: '₹3999 or $50' },
-    { label: 'Yearly Plan (₹24999 or $300)', value: '₹24999 or $300' },
+    { label: 'Monthly Plan (₹24999 or $300)', value: '₹24999 or $300' },
+    { label: 'Yearly Plan (₹44999 or $500)', value: '₹44999 or $500' },
   ];
 
   plans.forEach((plan) => {
